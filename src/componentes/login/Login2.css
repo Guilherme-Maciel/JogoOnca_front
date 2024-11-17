@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Londrina Solid', cursive;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.error-message {
+  color: rgb(143, 8, 8);
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.Login-container {
+  background: url('./img/fundo.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Estilizando o formulário de cadastro */
+.form-background {
+  background-image: url('./img/fundo-forms8.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 40%;
+  border-radius: 0 0 30px 30px;
+  height: 97%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 70%;
+  gap: 2px;
+  font-family: 'Chromium One Std Regular', sans-serif;
+}
+
+.Login-title {
+  font-size: 52px;
+  color: #57330e;
+  padding: 5px;
+  font-weight: bold;
+  text-shadow: 5px 5px 2px #000;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f7d287;
+  text-shadow: 3px 3px 3px #000;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 80%;
+  background-color: #f0d8a6;
+  border: 2px solid #57330e;
+  border-radius: 5px;
+}
+
+a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f7d287;
+  text-shadow: 3px 3px 3px #000;
+}
+
+button {
+  background-image: url('./img/placa5.png');
+  background-position: center;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 25%;
+  width: 85%;
+  margin-top: 10%;
+  font-size: 24px;
+  color: #f0d8a6;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Londrina Solid', cursive;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .Login-container {
+    background: url('./img/fundo.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  /*PADRÃO Menu superior*/
+  header {
+    position: sticky;
+    background-color: #19421c;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+  
+  .menu-cadastro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #19421c;
+    text-shadow: 5px 5px 2px #000;
+    padding: 10px 20px;
+    justify-content: center;
+  }
+  
+  .game-logo-cadastro {
+    height: 50px;
+    padding: 0px 40px;
+    width: auto;
+  }
+  
+  .menu-options-cadastro {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  .menu-options-cadastro a {
+    color: #f7d287;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #000;
+  }
+  
+  .menu-options-cadastro a:hover {
+    color: #ffcc33;
+    cursor: pointer;
+  }
+  
+  .sound-icon-cadastro {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .user-info-cadastro {
+    margin-left: auto; /* Alinha o nome do usuário à direita */
+    color: white;
+    font-size: 28px; /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+    text-transform: uppercase; /* Deixa o nome em maiúsculas */
+    text-shadow: 2px 2px 2px #000; /* Adiciona sombra para melhorar a visibilidade */
+    cursor: pointer;
+  }

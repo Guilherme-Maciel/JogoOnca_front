@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Londrina Solid', cursive;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.bg-home {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/public/assets/imagens/backgrounds/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+header{
+    position: sticky; 
+    top: 0;
+    background-color: #19421c;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: auto;
+  }
+
+{/*.bg-home-container {
+    position: sticky; 
+    top: 0;
+    background-color: #19421c;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: auto;
+}*/}
+
+.menu-superior {
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    background-color: #19421c;
+    text-shadow: 5px 5px 2px #000;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+.menu-infos-user {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.item-menu {
+    width: 30%;
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/public/assets/imagens/placas/placa_subtitulo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}/* Aqui é a parte que fica os icones de moeda, esmeralda etc... */
+
+/*.icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+}*/ /* Ajuste do tamanho do icone de moeda etc... */
+/*.icon-nivel {
+    width: 22%;
+    height: 55%;
+    background-position: center;
+    background-image: url('/public/assets/imagens/vetores/nivel.png');
+}*/ /* Icone de nivel (Azulzinho!) */
+/*.icon-esmeralda {
+    width: 22%;
+    height: 55%;
+    background-image: url('/public/assets/imagens/vetores/esmeraldas.png');
+}*/ /* Icone de ESMERALDA */
+/*.icon-moeda {
+    width: 22%;
+    height: 55%;
+    background-image: url('/public/assets/imagens/vetores/moedas.png');
+}*/ /* ICONE MOEDA */
+/*.info-nivel{
+    display: flex;
+}*/ /* MUDOU NADA */
+/*.numNivel {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.5em;
+    font-family: 'Londrina Solid', cursive;
+    color: #fff;
+}*/ /* MUDOU NADA */
+/* Define o numerozinho de cima *//* .info {
+    width: auto;
+    height: 60%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}*/
+/* Define o numerozinho de cima *//* .info-p {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2em;
+    color: #5E2C12;
+}*/
+
+/* DEFINE TAMANHO DOS ICONES DO MENU DE CIMA (NO CASO O NOSSO SERA SOMENTE SOM */.menu-itens-config {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Coloca a plaquina nos icones */.item-config {
+    width: 25%;
+    height: 20%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/public/assets/imagens/placas/IMAGEMICONE.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+/* ajusta o formato das plaquinhas */.item-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-som {
+    width: 60%;
+    height: 60%;
+    background-image: url('/public/assets/imagens/icones/volume-on.svg');
+}
+
+/*.icon-conta {
+    width: 60%;
+    height: 60%;
+    background-image: url('/public/assets/imagens/icones/usuario.svg');
+}*/
+
+/*.icon-logout {
+    width: 60%;
+    height: 60%;
+    background-image: url('/public/assets/imagens/icones/logout.svg');
+}*/
+
+/* Define tamnaho do menu */.main {
+    width: 90vw;
+    height: 75vh;
+    margin: 5vh auto;
+}
+
+
+.TITULO{
+height: 6vw;
+font-family: OCR A Std, monospace;
+background-image: url('/public/assets/imagens/placas/Imagem12.png');
+background-size: 50%;
+background-repeat: no-repeat;
+background-position: center;
+margin: 0 auto;
+text-align: center;
+font-size: 2em;
+}
+
+/* DEFINE OS COISO DE MENU PRA CLICAR E JOGAR .menu-principal {
+    width: 50vw;
+    height: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 0 auto;*/
+/*    background-image: url('/public/assets/imagens/placas/fundo_modal.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;*/
+/*    overflow-y: hidden;*/
+/*    display: table;*/
+/*    flex-wrap: wrap;*/
+/*    align-items: center;
+    justify-content: center;}*/
+
+/* DEFINE OS COISO DE MENU PRA CLICAR E JOGAR  .menu-item {
+    width: 100% !important;
+    height: 15% !important;
+    padding-top: center;
+    background-image: url('/public/assets/imagens/placas/PLACAHOMETESTE2.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent !important;
+    border-radius: 1px !important;
+    
+}*/
+
+/* DEFINE OS COISO DE MENU PRA CLICAR E JOGAR */.texto-p {
+    width: 100%;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2em;
+    font-weight: 500;
+    color: #5E2C12;
+}
+
+/* Centralizar caso tenha mais de uma linha no bo *//*.menu-item:nth-child(1) .texto-p{
+    width: 75%;
+    height: 50%;
+}
+
+.menu-item:nth-child(2) .texto-p{
+    width: 75%;
+    height: 50%;
+}*/
+
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    .icon-nivel {
+        width: 22%;
+    }
+    
+    .numNivel {
+        margin-left: 10px;
+        margin-top: 3px;
+        font-size: 1.2em;
+    }
+    
+    .info-p {
+        font-size: 1.3em;
+    }
+    
+    .texto-p {
+        font-size: 1.3em;
+    }
+}

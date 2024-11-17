@@ -1,0 +1,167 @@
+
+.Logout-container {
+  position: relative; /* Permite o posicionamento do pseudo-elemento */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden; 
+  z-index: 1; /*Para garantir que o conteúdo fique acima do fundo*/
+}
+
+.Logout-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./img/fundo.png') no-repeat center center;
+  background-size: cover;
+  filter: blur(5px); /*Ajuste o valor do blur conforme necessário*/
+  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+
+/* Estilizando o Logout */
+.form-background {
+  background-image: url('./img/fundo-forms8.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 35px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: none;
+  min-height: 80vh;
+  border-radius: 0 0 30px 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  gap: 1px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Chromium One Std Regular', sans-serif;
+  text-align: center;
+  color: #57330e;
+  font-weight: bold;
+  text-shadow: 5px 5px 2px #00000044;
+  margin-bottom: 20px;
+
+}
+
+.button-container {
+  display: flex; /* Garante que os botões fiquem lado a lado */
+  justify-content: space-between; /* Espaço entre os botões */
+  align-items: center;
+  width: 85%; /* Faz o container de botões ocupar toda a largura */
+  gap: 10px; /* Adiciona espaçamento entre os botões */
+}
+
+.button1 {
+  background-image: url(img/placa5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  position: relative;
+  top: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 30%;
+  width: 40%;
+  font-size: 30px;
+  color: #89ea5c;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #47e741a3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.button2 {
+  background-image: url(img/placa5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  position: relative;
+  top: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 30%;
+  width: 40%;
+  font-size: 30px;
+  color: #eb0000;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #f8414188;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Tornando o layout responsivo */
+@media (max-width: 768px) {
+  .form-background {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+  .button1, .button2 {
+    width: 45%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .button1 {
+    margin-top: 20px;
+    top: 0;
+  }
+
+  .button2 {
+    top: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .button1, .button2 {
+    width: 50%;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .form-background {
+    width: 90%;
+    padding: 15px;
+  }
+}

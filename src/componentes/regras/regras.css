@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Londrina Solid', cursive;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.container {
+  background: url('images/fundo.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+  
+  /*Estilizando o formulário de cadastro*/
+  .q {
+    background-image: url('./images/fundo-forms8.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 93vh;
+    width: 40%;
+  }
+  
+  .q-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 2px;
+    padding: 15%;
+  }
+  
+  .ti {
+    font-size: 5vh;
+    color: #57330e;
+    font-weight: bold;
+    text-shadow: 5px 5px 2px #000;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0 0 0;
+  }
+  
+  .tex {
+    width: 100%;
+    color: #221303;
+  }
+  
+  .texto {
+    font-size: 2vh;
+    color: #221303;
+  }
+  
+  .b {
+    background-image: url('images/placa5.png');
+    background-position: center;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 10%;
+    width: 60%;
+    margin-top: 0;
+    /* font-size: 24px; */
+    font-size: 4vh;
+    color: #f0d8a6;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    margin-top: 1rem;
+  }
+  
+  .b:hover {
+    transform: scale(1.05);
+  }
+  
+  .b:active {
+    transform: scale(0.95);
+  }

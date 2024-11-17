@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
+
+.bg-conta {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/public/assets/imagens/backgrounds/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-main-conta {
+    width: 90vw;
+    height: 90vh;
+    margin: 1vh auto;
+}
+
+.content-main-superior-conta {
+    background-image: url('/public/assets/imagens/backgrounds/fundo-forms8.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 30% 30%;
+    width: 60vw;
+    height: 83vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos-user-conta {
+    width: 30vw;
+}
+
+.info-conta {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.info-conta > label {
+    width: 20%;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 1.8em;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.info-conta > input {
+    margin-left: 10px;
+    width: 75%;
+    height: 60%;
+    padding: 10px;
+    font-size: 1.8em;
+    font-family: 'Londrina Solid', cursive;
+    color: #5E2C12;
+    border: none;
+    border-radius: 2px;
+}
+
+.info-conta > .btn-atualiza {
+    margin-left: 10px;
+    width: 70%;
+    height: 70%;
+    font-size: 1.8em;
+    font-family: 'Londrina Solid', cursive;
+    color: #E6B789;
+    background-color: #5E2C12;
+    border: none;
+    margin: 25px;
+}
+
+.info-conta > .btn-atualiza:hover {
+    border: 3px solid #331809;
+}
+
+.inp-senha {
+    width: 70% !important;
+    border-radius: 2px 0px 0px 2px !important;
+}
+
+.btn-senha-conta {
+    width: 10%;
+    height: 65%;
+    background-color: #fff !important;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.tooltip-text-conta {
+    visibility: hidden;
+    position: absolute;
+    flex-grow: 1;
+    z-index: 1;
+    height: auto;
+    color: #E6B789;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 1.2em;
+    background-color: #5E2C12;
+    padding: 15px;
+}
+
+#top {
+    margin-top: -150px;
+    margin-left: -100px;
+}
+
+.error-message {
+    color: red;
+    font-size: 1em;
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilo para a imagem principal grande */
+.main-profile-pic-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main-profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid  #000;  
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    .info-conta > label {
+        width: 18%;
+        font-size: 1.6em;
+    }
+
+    .info-conta > input {
+        height: 70%;
+        font-size: 1.6em;
+    }
+
+    .info-conta > .btn-atualiza {
+        height: 75%;
+    }
+
+    .main-profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-pic-option {
+        width: 50px;
+        height: 50px;
+    }
+}

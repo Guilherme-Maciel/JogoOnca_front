@@ -1,0 +1,158 @@
+.Novasenha-container {
+  position: relative; /* Permite o posicionamento do pseudo-elemento */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden; 
+  z-index: 1; /*Para garantir que o conteúdo fique acima do fundo*/
+}
+
+.Novasenha-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./img/fundo.png') no-repeat center center;
+  background-size: cover;
+  filter: blur(5px); /*Ajuste o valor do blur conforme necessário*/
+  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+/* Estilizando o formulário de cadastro */
+.form-background {
+  background-image: url('./img/fundo-forms8_rectangular.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  width: 40%;
+  border-radius: 0 0 30px 30px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  gap: 1px;
+  padding-top: 70px;
+  font-family: 'Chromium One Std Regular', sans-serif;
+}
+
+.Novasenha-title {
+  margin-top: 4%;
+  font-size: 45px;
+  color: #57330e;
+  font-weight: bold;
+  text-shadow: 5px 5px 2px #f7d287;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-top: 2%;
+  text-align: left;
+  width: 100%;
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  color: #f7d287;
+  text-shadow: 2px 2px 2px #000;
+}
+
+input {
+  margin-top: 4%;
+  padding: 5px; 
+  height: 30px; 
+  width: 80%;
+  background-color: #f0d8a6;
+  border: 2px solid #57330e;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+button {
+  background-image: url('img/placa5.png');
+  background-position: center;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: auto;
+  width: 50%;
+  margin-top: 4%;
+  font-size: 24px;
+  color: #f0d8a6;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+.error-message {
+  color: rgb(143, 8, 8);
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .form-background {
+    width: 80%; /* Ajustado para 80% no tablet */
+    padding: 20px; /* Menor padding */
+  }
+
+  .Esqueceusenha-title {
+    font-size: 30px; /* Reduzido para tablets */
+  }
+
+  button {
+    font-size: 18px; /* Ajustado tamanho do botão */
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column; /* Menu empilhado no mobile */
+    padding: 10px 10px;
+  }
+
+  .menu-options {
+    flex-direction: column; /* Opções em coluna */
+    gap: 10px; /* Reduzido gap entre opções */
+  }
+
+  .form-background {
+    width: 90%; /* Ajustado para 90% no mobile */
+    padding: 20px; /* Menor padding */
+  }
+
+  .Esqueceusenha-title {
+    font-size: 24px; /* Reduzido para telas menores */
+  }
+
+  input {
+    width: 100%; /* 100% da largura no mobile */
+  }
+
+  button {
+    font-size: 16px; /* Botão menor para mobile */
+  }
+}
