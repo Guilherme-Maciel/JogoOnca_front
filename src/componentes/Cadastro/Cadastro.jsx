@@ -12,6 +12,8 @@ function Cadastro() {
   const [birthday, setBirthday] = useState("");
   const [passwordHash, setPasswordHash] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [erro, setErro] = useState("");
 
@@ -83,6 +85,7 @@ function Cadastro() {
               onChange={(e) => setUsername(e.target.value)}
               required
               minLength={3}
+              placeholder="Digite seu nome completo"
               aria-label="Digite seu nome completo"
             />
 
@@ -104,37 +107,60 @@ function Cadastro() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              placeholder="seuemail@exemplo.com"
               aria-label="Digite seu email"
             />
 
             <label htmlFor="passwordHash">Senha</label>
-            <input
-              type="password"
-              id="passwordHash"
-              name="senha"
-              value={passwordHash}
-              onChange={(e) => setPasswordHash(e.target.value)}
-              required
-              minLength={6}
-              aria-label="Digite sua senha"
-            />
+            <div className="input-wrapper">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="passwordHash"
+                name="senha"
+                value={passwordHash}
+                onChange={(e) => setPasswordHash(e.target.value)}
+                required
+                minLength={6}
+                placeholder="Mínimo 6 caracteres"
+                aria-label="Digite sua senha"
+              />
+              <button
+                type="button"
+                className="toggle-password"
+                onClick={() => setShowPassword(!showPassword)}
+                aria-label={showPassword ? "Ocultar senha" : "Mostrar senha"}
+              >
+                {showPassword ? "🙈" : "👁️"}
+              </button>
+            </div>
 
             <label htmlFor="confirmPassword">Confirmação de Senha</label>
-            <input
-              type="password"
-              id="confirmPassword"
-              name="confirmacaoSenha"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-              required
-              minLength={6}
-              aria-label="Confirme sua senha"
-            />
+            <div className="input-wrapper">
+              <input
+                type={showConfirmPassword ? "text" : "password"}
+                id="confirmPassword"
+                name="confirmacaoSenha"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                required
+                minLength={6}
+                placeholder="Repita sua senha"
+                aria-label="Confirme sua senha"
+              />
+              <button
+                type="button"
+                className="toggle-password"
+                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                aria-label={showConfirmPassword ? "Ocultar senha" : "Mostrar senha"}
+              >
+                {showConfirmPassword ? "🙈" : "👁️"}
+              </button>
+            </div>
 
             {erro && <p className="error-message">{erro}</p>}
             {loading && <p className="loading-message">Carregando...</p>}
 
-            <button type="submit" disabled={loading}>
+            <button type="submit" disabled={loading} className="submit-button">
               {loading ? "Cadastrando..." : "Cadastrar"}
             </button>
           </form>
@@ -145,3 +171,4 @@ function Cadastro() {
 }
 
 export default Cadastro;
+

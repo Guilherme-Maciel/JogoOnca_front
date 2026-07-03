@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from "react-toastify";
 import './LojaMoeda.css';
@@ -27,7 +27,7 @@ function LojaMoeda() {
     //     try {
     //         await api.put('/user', {'email': userLocalEmail, coins});
     //     }catch(error){
-    //         console.log('Não foi possivel realizar a compra',error);
+    //         console.log('NÃ£o foi possivel realizar a compra',error);
     //     }
     // }
 
@@ -56,7 +56,7 @@ function LojaMoeda() {
         try {
             await api.put('/user', {'email': userLocalEmail, coins});
         }catch(error){
-            console.log('Não foi possivel realizar a compra',error);
+            console.log('NÃ£o foi possivel realizar a compra',error);
         }
     }
 
@@ -75,7 +75,7 @@ function LojaMoeda() {
                     <div className="moedas-atuais-loja-moeda">
                         <div className="item-qtde-loja-moeda moedas-loja-moeda">
                             <div className="icon-loja-moeda icon-moeda-loja-moeda"></div>
-                            <div className="info-esmeralda-loja-moeda">
+                            <div className="flex">
                                 <p className="info-p-loja-moeda">
                                     {coins}
                                 </p>
@@ -152,14 +152,14 @@ export default LojaMoeda
 //           const response = await api.put('/user', {'email': userLocalEmail, coins});
 //           if(response.status == 200) {
 //             if(coins !== undefined){
-//                 //parece q está entendendo como string --------------------
+//                 //parece q estÃ¡ entendendo como string --------------------
 //                 coins = convert + coins;
 //                 localStorage.setItem('coins', coins);
 //                 window.location.reload();
 //             }
 //           }
 //         }catch(err) {
-//           console.log('credenciais inválidas', err);
+//           console.log('credenciais invÃ¡lidas', err);
 //         }
 //     }
     
@@ -300,7 +300,7 @@ export default LojaMoeda
 
 //             } 
 //             catch (error) {
-//                 toast.error('Erro ao enviar informações!');
+//                 toast.error('Erro ao enviar informaÃ§Ãµes!');
 //             }
 //         };
 
@@ -314,10 +314,10 @@ export default LojaMoeda
 //                 {/* <header className="menu-loja">                  
 //                     <nav className="menu-options-loja">
 //                         <a onClick={() => {navigate("/menu")}}>
-//                             <img src={gameIcon} alt="Jogo da Onça" className="game-logo-loja" />
+//                             <img src={gameIcon} alt="Jogo da OnÃ§a" className="game-logo-loja" />
 //                         </a>
 //                         <a onClick={() => {navigate("/tutorial")}}>Regras</a>
-//                         <a onClick={() => {navigate("/credito")}}>Créditos</a>
+//                         <a onClick={() => {navigate("/credito")}}>CrÃ©ditos</a>
 //                         <a onClick={() => {navigate("/Logout")}}>Log Out</a>
 //                     </nav>
 //                 </header> */}
@@ -404,14 +404,14 @@ export default LojaMoeda
 //           const response = await api.put('/user', {'email': userLocalEmail, coins});
 //           if(response.status == 200) {
 //             if(coins !== undefined){
-//                 //parece q está entendendo como string --------------------
+//                 //parece q estÃ¡ entendendo como string --------------------
 //                 coins = convert + coins;
 //                 localStorage.setItem('coins', coins);
 //                 window.location.reload();
 //             }
 //           }
 //         }catch(err) {
-//           console.log('credenciais inválidas', err);
+//           console.log('credenciais invÃ¡lidas', err);
 //         }
 //     }
 
@@ -431,3 +431,4 @@ export default LojaMoeda
 //                                     <h1>100 MOEDAS</h1>
 //                                 </div>
 //                                 <button value={100} onClick={handleBuy}>buy</button>
+

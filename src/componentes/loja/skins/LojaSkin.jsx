@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+﻿import React, { useEffect, useState} from 'react';
 import { useNavigate } from 'react-router';
 import './LojaSkin.css';
 import ReturnIcon from '/public/assets/imagens/icones/ReturnIcon';
@@ -7,7 +7,7 @@ import LojaSkinService from '/src/services/LojaSkinsService';
 import ModalCompraSkin from '/src/componentes/modals/compras/skins/compraSkin';
 import { toast } from 'react-toastify';
 
-// @ToDo: montar lógica para validar se é possível comprar skin (se não, mandar para loja de moeda) + salvar ela na conta do usuario +atualizar informação na sessão (essa parte o paulo faz)
+// @ToDo: montar lÃ³gica para validar se Ã© possÃ­vel comprar skin (se nÃ£o, mandar para loja de moeda) + salvar ela na conta do usuario +atualizar informaÃ§Ã£o na sessÃ£o (essa parte o paulo faz)
 
 function LojaSkin() {
     const navigate = useNavigate();
@@ -129,3 +129,4 @@ function LojaSkin() {
     }
 
 export default LojaSkin
+

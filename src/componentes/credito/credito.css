@@ -1,14 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Londrina Solid', cursive;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
+﻿
 
 .container {
-  background: url('images/fundo.png') no-repeat center center;
+  background: url('/assets/imagens/backgrounds/fundo.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -19,9 +12,9 @@
   overflow: hidden;
 }
 
-/*Estilizando o formulário de cadastro*/
+/*Estilizando o formulÃ¡rio de cadastro*/
 .quadro {
-  background-image: url('./images/fundo-forms8.png');
+  background-image: url('/assets/imagens/backgrounds/fundo-forms8.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,15 +37,13 @@
 }
 
 .title {
-  /* font-size: 52px; */
-  font-size: 5vh;
-  color: #57330e;
-  font-weight: bold;
-  text-shadow: 5px 5px 2px #000;
-  /* margin-bottom: 20px; */
-  width: 100%;
-  text-align: center;
-  padding: 5px 0 0 0;
+    font-size: 5vh;
+    color: #f7d287;
+    font-weight: bold;
+    text-shadow: 5px 5px 2px #000;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0 0 0;
 }
 
 .subtitle {
@@ -62,11 +53,7 @@
     color: #221303;
 }
 
-.texto {
-  width: 100%;
-  margin-top: 0.5rem;
-  color: #221303
-}
+
 
 .list-title {
   text-align: start;
@@ -77,7 +64,7 @@
 .list-text {
   margin-left: 2rem;
   /* font-size: 20px; */
-  font-size: 2vh;
+  font-size: 1.6rem;
 }
 
 button {
@@ -134,3 +121,4 @@ button:active {
     scrollbar-width: 100%;
   } */
 }
+

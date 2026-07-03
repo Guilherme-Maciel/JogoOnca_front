@@ -57,7 +57,6 @@ const Header = () => {
             </Link>
             <Link to="/tutorial">Regras</Link>
             <Link to="/credito">Créditos</Link>
-            <Link to="/loja/moedas">Loja</Link>
             <div className="user-info-cadastro" onClick={() => navigate("/conta")}>
               <p>{userLocal}</p>
             </div>

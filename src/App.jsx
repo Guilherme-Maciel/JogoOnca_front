@@ -45,8 +45,6 @@ const App = () => {
               <Route path='/login' element={<Login />} />
               <Route path='/cadastro' element={<Cadastro />} />
               <Route path='/novasenha' element={<Novasenha/>} />
-              <Route path='/loja/skins' element={<LojaSkin />} />
-              <Route path='/loja/moedas' element={<LojaMoeda />} />
               <Route path='/conta' element={<Conta />} />
               <Route path='/tabuleiro' element={<Tabuleiro />} />
               <Route path='/fila' element={<Fila />} />
@@ -57,8 +55,7 @@ const App = () => {
               <Route path='/derrota/:id' element={<Derrota />} />
               <Route path='/desistencia/:id' element={<Desistencia/>} />
               <Route path='/desistir' element={<Desistir />} />
-              <Route path='/compras/moedas/:id' element={<CompraMoedas />} />
-              <Route path='/compras/skins/:id' element={<CompraSkins />} />
+
               <Route path='/credito' element={<Credito />} />
             </Routes>
           </GlobalProvider>

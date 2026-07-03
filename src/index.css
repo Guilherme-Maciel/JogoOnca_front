@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Londrina Solid', cursive;
+  background-color: #19421c;
+  margin: 0;
+  padding: 0;
+}
+
 .bg-login {
   padding: 1rem;
-  background-image: url('/public/assets/imagens/backgrounds/cenario_login-tabuleiro.png');
+  background-image: url('/assets/imagens/backgrounds/cenario_login-tabuleiro.png');
   background-repeat: repeat;
   background-position: center;
   background-color: #0AAD44;
@@ -45,3 +55,4 @@
 .password::first-letter {
   text-transform: capitalize;
 }
+

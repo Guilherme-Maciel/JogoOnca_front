@@ -1,14 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Londrina Solid', cursive;
-    overflow: hidden;
-    scroll-behavior: smooth;
-  }
+﻿
   
   .Login-container {
-    background: url('./img/fundo.png') no-repeat center center;
+    background: url('/assets/imagens/backgrounds/fundo.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -18,7 +11,7 @@
     overflow: hidden;
   }
   
-  /*PADRÃO Menu superior*/
+  /*PADRÃƒO Menu superior*/
   header {
     position: sticky;
     background-color: #19421c;
@@ -27,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
     height: auto;
+    z-index: 999;
   }
   
   .menu-cadastro {
@@ -72,11 +66,11 @@
   }
 
   .user-info-cadastro {
-    margin-left: auto; /* Alinha o nome do usuário à direita */
+    margin-left: auto; /* Alinha o nome do usuÃ¡rio Ã  direita */
     color: white;
     font-size: 28px; /* Aumenta o tamanho da fonte */
     font-weight: bold;
-    text-transform: uppercase; /* Deixa o nome em maiúsculas */
+    text-transform: uppercase; /* Deixa o nome em maiÃºsculas */
     text-shadow: 2px 2px 2px #000; /* Adiciona sombra para melhorar a visibilidade */
     cursor: pointer;
   }

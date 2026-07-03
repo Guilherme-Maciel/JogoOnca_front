@@ -1,4 +1,4 @@
-.Confirmarcompra-container {
+﻿.Confirmarcompra-container {
   position: relative; /* Permite o posicionamento do pseudo-elemento */
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   height: 100vh;
   flex-direction: column;
   overflow: hidden; 
-  z-index: 1; /*Para garantir que o conteúdo fique acima do fundo*/
+  z-index: 1; /*Para garantir que o conteÃºdo fique acima do fundo*/
 }
 
 .Confirmarcompra-container::before {
@@ -16,10 +16,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('./img/fundo.png') no-repeat center center;
+  background: url('/assets/imagens/backgrounds/fundo.jpg') no-repeat center center;
   background-size: cover;
-  filter: blur(5px); /*Ajuste o valor do blur conforme necessário*/
-  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+  filter: blur(5px); /*Ajuste o valor do blur conforme necessÃ¡rio*/
+  z-index: -1; /* Coloca o pseudo-elemento atrÃ¡s do conteÃºdo */
 }
 
 /* Estilizando o menu */
@@ -76,9 +76,9 @@ header{
   cursor: pointer;
 }
 
-/* Estilizando o formulário de cadastro */
+/* Estilizando o formulÃ¡rio de cadastro */
 .form-background {
-  background-image: url('./img/fundo-forms8.png');
+  background-image: url('/assets/imagens/backgrounds/fundo-forms8.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,7 +155,7 @@ form {
 }
 
 .coin-image {
-  width: 200px; /* Ajuste o tamanho conforme necessário */
+  width: 200px; /* Ajuste o tamanho conforme necessÃ¡rio */
   height: 85px;
   object-fit: contain;
 }
@@ -186,3 +186,4 @@ button:hover {
 button:active {
   transform: scale(0.95);
 }
+

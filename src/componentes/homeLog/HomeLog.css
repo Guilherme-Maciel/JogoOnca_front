@@ -1,16 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Londrina Solid', cursive;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
+
 
 .HomeLog-container {
-  background: url('./images/fundo.png') no-repeat center center;
+  background: url('/assets/imagens/backgrounds/fundo.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -87,7 +80,7 @@ header{
 }
 
 .logo-homeLog {
-  background-image: url('/public/assets/imagens/backgrounds/LogoOnca.png');
+  background-image: url('/assets/imagens/backgrounds/LogoOnca.png');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -137,7 +130,7 @@ button:active {
 
 /* Tornando o layout responsivo */
 @media (max-width: 600px) {
-  /* Ajuste para o formulário */
+  /* Ajuste para o formulÃ¡rio */
   .logo-homeLog {
       width: 90%;
       padding: 20px;
@@ -145,16 +138,17 @@ button:active {
   }
   /* Ajuste para o menu */
   .menu-options-HomeLog {
-      flex-direction: column; /* Faz com que as opções fiquem empilhadas */
-      gap: 10px; /* Ajusta o espaçamento entre os itens no mobile */
+      flex-direction: column; /* Faz com que as opÃ§Ãµes fiquem empilhadas */
+      gap: 10px; /* Ajusta o espaÃ§amento entre os itens no mobile */
   }
   .menu-options-HomeLog a {
       font-size: 18px; /* Diminui o tamanho das fontes no menu em telas menores */
   }
   .game-logo-HomeLog {
-      height: 40px; /* Ajusta o tamanho do ícone em telas menores */
+      height: 40px; /* Ajusta o tamanho do Ã­cone em telas menores */
   }
   .sound-icon-cadastro {
-      height: 30px; /* Ajusta o ícone de som no mobile */
+      height: 30px; /* Ajusta o Ã­cone de som no mobile */
   }
 }
+

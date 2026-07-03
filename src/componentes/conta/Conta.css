@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
 
 .bg-conta {
     width: 100vw;
     height: 100vh;
-    background-image: url('/public/assets/imagens/backgrounds/fundo.png');
+    background-image: url('/assets/imagens/backgrounds/fundo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -15,7 +15,7 @@
 }
 
 .content-main-superior-conta {
-    background-image: url('/public/assets/imagens/backgrounds/fundo-forms8.png');
+    background-image: url('/assets/imagens/backgrounds/fundo-forms8.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -153,3 +153,4 @@
         height: 50px;
     }
 }
+

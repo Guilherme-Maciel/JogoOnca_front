@@ -1,16 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Londrina Solid', cursive;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
 
 .cadastro-container {
-  background: url('images/fundo.png') no-repeat center center;
+  background: url('/assets/imagens/backgrounds/fundo.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;

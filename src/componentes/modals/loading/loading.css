@@ -1,15 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
-
+﻿
 .background {
     width: 100vw;
     height: 100vh;
-    background-image: url('/public/assets/imagens/backgrounds/cenario_login-tabuleiro.png');
+    background-image: url('/assets/imagens/backgrounds/cenario_login-tabuleiro.png');
     background-repeat: no-repeat;
     background-size: cover;
 }

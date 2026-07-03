@@ -1,15 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
+﻿
 
 .background-modal-compra-moeda{
     width: 100vw;
     height: 100vh;
-    background-image: url('/public/assets/imagens/backgrounds/cenario_loja.png');
+    background-image: url('/assets/imagens/backgrounds/cenario_loja.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -31,7 +25,7 @@
     margin: 0 auto;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("/public/assets/imagens/placas/fundo_modal.png");
+    background-image: url("/assets/imagens/placas/fundo_modal.png");
 }
 
 .box-titulo-loja-moeda{

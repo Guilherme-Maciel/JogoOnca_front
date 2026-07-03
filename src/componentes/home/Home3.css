@@ -1,18 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Londrina Solid', cursive;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
+
 
 .bg-home {
     width: 100vw;
     height: 100vh;
-    background-image: url('/public/assets/imagens/backgrounds/fundo.png');
+    background-image: url('/assets/imagens/backgrounds/fundo.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -28,16 +21,6 @@ header{
     height: auto;
   }
 
-{/*.bg-home-container {
-    position: sticky; 
-    top: 0;
-    background-color: #19421c;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    height: auto;
-}*/}
 
 .menu-superior {
     width: 100%;
@@ -63,12 +46,12 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url('/public/assets/imagens/placas/placa_subtitulo.png');
+    background-image: url('/assets/imagens/placas/placa_subtitulo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
-}/* Aqui é a parte que fica os icones de moeda, esmeralda etc... */
+}/* Aqui Ã© a parte que fica os icones de moeda, esmeralda etc... */
 
 /*.icon {
     background-size: contain;
@@ -78,17 +61,17 @@ header{
     width: 22%;
     height: 55%;
     background-position: center;
-    background-image: url('/public/assets/imagens/vetores/nivel.png');
+    background-image: url('/assets/imagens/vetores/nivel.png');
 }*/ /* Icone de nivel (Azulzinho!) */
 /*.icon-esmeralda {
     width: 22%;
     height: 55%;
-    background-image: url('/public/assets/imagens/vetores/esmeraldas.png');
+    background-image: url('/assets/imagens/vetores/esmeraldas.png');
 }*/ /* Icone de ESMERALDA */
 /*.icon-moeda {
     width: 22%;
     height: 55%;
-    background-image: url('/public/assets/imagens/vetores/moedas.png');
+    background-image: url('/assets/imagens/vetores/moedas.png');
 }*/ /* ICONE MOEDA */
 /*.info-nivel{
     display: flex;
@@ -130,7 +113,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url('/public/assets/imagens/placas/IMAGEMICONE.png');
+    background-image: url('/assets/imagens/placas/IMAGEMICONE.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -145,19 +128,19 @@ header{
 .icon-som {
     width: 60%;
     height: 60%;
-    background-image: url('/public/assets/imagens/icones/volume-on.svg');
+    background-image: url('/assets/imagens/icones/volume-on.svg');
 }
 
 /*.icon-conta {
     width: 60%;
     height: 60%;
-    background-image: url('/public/assets/imagens/icones/usuario.svg');
+    background-image: url('/assets/imagens/icones/usuario.svg');
 }*/
 
 /*.icon-logout {
     width: 60%;
     height: 60%;
-    background-image: url('/public/assets/imagens/icones/logout.svg');
+    background-image: url('/assets/imagens/icones/logout.svg');
 }*/
 
 /* Define tamnaho do menu */.main {
@@ -170,7 +153,7 @@ header{
 .TITULO{
 height: 6vw;
 font-family: OCR A Std, monospace;
-background-image: url('/public/assets/imagens/placas/Imagem12.png');
+background-image: url('/assets/imagens/placas/Imagem12.png');
 background-size: 50%;
 background-repeat: no-repeat;
 background-position: center;
@@ -185,7 +168,7 @@ font-size: 2em;
     padding-left: auto;
     padding-right: auto;
     margin: 0 auto;*/
-/*    background-image: url('/public/assets/imagens/placas/fundo_modal.png');
+/*    background-image: url('/assets/imagens/placas/fundo_modal.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;*/
@@ -199,7 +182,7 @@ font-size: 2em;
     width: 100% !important;
     height: 15% !important;
     padding-top: center;
-    background-image: url('/public/assets/imagens/placas/PLACAHOMETESTE2.png');
+    background-image: url('/assets/imagens/placas/PLACAHOMETESTE2.png');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
@@ -249,3 +232,4 @@ font-size: 2em;
         font-size: 1.3em;
     }
 }
+

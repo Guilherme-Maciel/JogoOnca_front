@@ -28,50 +28,38 @@ function Credito() {
 
   const navigate = useNavigate();
   return (
-  <div className="container">
-      {/* <header className="menu-cadastro">                  
-        <nav className="menu-options-cadastro">
-          <a onClick={() => {navigate("/menu")}}>
-            <img src={gameIcon} alt="Jogo da Onça" className="game-logo-cadastro" />
-          </a>
-          <a onClick={() => {navigate("/login")}}>Login</a>
-          <a onClick={() => {navigate("/tutorial")}}>Regras</a>
-          <a onClick={() => {navigate("/Cadastro")}}>Cadastrar</a>
-          <a onClick={() => {navigate("/loja/moedas")}}>Loja</a>
-          <a onClick={toggleSound}>
-            <img src={soundIcon} alt="Som do Jogo" className="sound-icon-cadastro" />
-          </a>
-        </nav>
-      </header> */}
-      <Header />
-        <div className="quadro">
-            <div className='quadro-container'>
+    <>
+          <Header />
+        <div className="    flex
+    h-screen
+    flex-col
+    items-center
+    justify-center
+    overflow-hidden
+    bg-[url('/assets/imagens/backgrounds/fundo.jpg')]
+    bg-cover
+    bg-center
+    bg-no-repeat">
+            <div className='w-full max-w-5xl rounded-3xl
+                bg-white/55 backdrop-blur-md
+                border border-white/30
+                shadow-2xl
+                flex flex-col items-center p-10 mt-10'>
               <div className="title">Créditos</div>
                 <div className='subtitle'>
                   <br></br><p>Este jogo foi realizado como parte do curso de Análise e
                   Desenvolvimento de Tecnologia na FATEC São Paulo.</p>
                 </div>
-                <div className='texto'>
-                  <ul>
-                    <li className='list-title'>Desenvolvimento Jogo e fucionalidades:</li>
-                    <li className='list-text'>Renato Caetité</li>
-                    <li className='list-text'>Guilherme Santo</li>
-                    <li className='list-text'>Isabela Ramos</li>
-                    <li className='list-title'>Desenvolvimento site:</li>
-                    <li className='list-text'>Julio Cezar Erdei</li>
-                    <li className='list-text'>Sofia de Mello</li>
-                    <li className='list-text'>Tamires Barboza</li>
-                    <li className='list-text'>Rodrigo Marcato </li>
-                    <li className='list-text'>Pedro Henrique</li>
-                    <li className='list-text'>Diogo Souza </li>
-                    <li className='list-title'>Arte e Design: </li>
-                    <li className='list-text'>Isabela Ramos</li>
-                  </ul>
+                <div className='texto mt-10 mb-10 gap-5 flex flex-col'>
+                  <p>Desenvolvimento Jogo e fucionalidades: Renato Caetité, Guilherme Santos e Isabela Ramos</p>
+                  <p>Desenvolvimento site: Julio Cezar Erdei, Sofia de Mello, Tamires Barboza, Rodrigo Marcato, Pedro Henrique e Diogo Souza</p>
+                  <p >Arte e Design: Isabela Ramos</p>
                 </div>
               <button type="submit" onClick={() => {navigate("/menu")}}>Fechar</button>
             </div>
         </div>
-    </div>
+    </>
+
   );
 }
 

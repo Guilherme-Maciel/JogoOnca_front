@@ -10,6 +10,7 @@ function Login() {
   const { user, setUser } = useUser();
   const [email, setEmail] = useState("");
   const [passwordHash, setPasswordHash] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
@@ -54,19 +55,31 @@ function Login() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            placeholder="seuemail@exemplo.com"
             aria-label="Digite seu email"
           />
 
           <label htmlFor="passwordHash">Senha</label>
-          <input
-            type="password"
-            id="passwordHash"
-            name="senha"
-            value={passwordHash}
-            onChange={(e) => setPasswordHash(e.target.value)}
-            required
-            aria-label="Digite sua senha"
-          />
+          <div className="input-wrapper">
+            <input
+              type={showPassword ? "text" : "password"}
+              id="passwordHash"
+              name="senha"
+              value={passwordHash}
+              onChange={(e) => setPasswordHash(e.target.value)}
+              required
+              placeholder="Digite sua senha"
+              aria-label="Digite sua senha"
+            />
+            <button
+              type="button"
+              className="toggle-password"
+              onClick={() => setShowPassword(!showPassword)}
+              aria-label={showPassword ? "Ocultar senha" : "Mostrar senha"}
+            >
+              {showPassword ? "🙈" : "👁️"}
+            </button>
+          </div>
 
           {error && <p className="error-message">{error}</p>}
 
@@ -86,3 +99,4 @@ function Login() {
 }
 
 export default Login;
+

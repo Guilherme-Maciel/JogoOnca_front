@@ -1,148 +1,225 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Londrina Solid', cursive;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
 
 .cadastro-container {
-  background: url('images/fundo.png') no-repeat center center;
+  background: url('/assets/imagens/backgrounds/fundo.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
-  overflow: hidden;
+  overflow-y: auto;
+  padding: 20px;
 }
 
-/*Estilizando o formulário de cadastro*/
-
+/*Estilizando o formulÃ¡rio de cadastro*/
 .form-background-cadastro {
-  height: 95%;
-  width: 50%;
-  background-image: url('./images/fundo-forms8.png');
+  min-height: 85vh;
+  width: 100%;
+  max-width: 550px;
+  background-image: url('/assets/imagens/backgrounds/fundo-forms8.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0px 0px 30% 30%;
+  height: auto;
+  padding: 40px 0;
 }
 
 .div-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 90%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 2px;
 }
 
 .cadastro-title {
-  font-size: 52px;
+  font-size: 48px;
   color: #57330e;
   padding: 5px;
   font-weight: bold;
-  text-shadow: 5px 5px 2px #000;
+  text-shadow: 2px 2px 0px #f7d287, 4px 4px 2px #000;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 label {
   font-size: 20px;
-  padding-right: 4px;
   font-weight: bold;
   color: #f7d287;
-  text-shadow: 3px 3px 3px #000;
-  margin-bottom: 1px;
+  text-shadow: 2px 2px 2px #000;
+  align-self: flex-start;
+  margin-left: 10%;
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 80%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 input {
-  margin-bottom: 4px;
-  width: 75%;
-  height: 40px;
+  width: 80%;
+  margin-bottom: 10px;
+  height: 42px;
+  padding: 10px 12px;
+  font-size: 16px;
   background-color: #f0d8a6;
   border: 2px solid #57330e;
   border-radius: 5px;
+  color: #57330e;
+  font-weight: bold;
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
-button {
-  background-image: url('images/placa5.png');
-  border-radius: 10px;
-  margin-bottom: 10px;
-  width: 40%;
-  height: 40px;
+.input-wrapper input {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+input[type="date"] {
+  font-family: inherit;
+}
+
+input::placeholder {
+  color: #a48a60;
+  opacity: 0.8;
+}
+
+input:hover {
+  border-color: #8b5a2b;
+  background-color: #f7e4c2;
+}
+
+input:focus {
+  outline: 3px solid #ffcc33;
+  box-shadow: 0 0 8px rgba(255, 204, 51, 0.8);
+  background-color: #ffffff;
+  border-color: #57330e;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 22px;
+  color: #57330e;
+  text-shadow: none !important;
+  transition: transform 0.1s ease;
+  z-index: 2;
+}
+
+.toggle-password:hover {
+  transform: scale(1.2) !important;
+}
+
+.toggle-password:active {
+  transform: scale(0.9) !important;
+}
+
+.error-message {
+  color: rgb(180, 20, 20);
+  font-size: 1.1rem;
+  margin-top: 5px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+}
+
+.loading-message {
+  color: #f7d287;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+  text-align: center;
+}
+
+button.submit-button {
+  background-image: url('/assets/imagens/placas/placa5.png'), radial-gradient(circle, #8b5a2b 0%, #57330e 100%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #57330e;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 50%;
+  height: 48px;
+  cursor: pointer;
+  font-size: 22px;
   color: #f0d8a6;
   font-weight: bold;
-  text-shadow: 3px 3px 3px #000;
-  cursor: pointer;
-  transition: transform 0.1s ease;
+  text-shadow: 2px 2px 2px #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-button:hover {
+button.submit-button:hover:not(:disabled) {
   transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-button:active {
+button.submit-button:focus-visible {
+  outline: 3px solid #ffcc33;
+  box-shadow: 0 0 10px rgba(255, 204, 51, 0.8);
+}
+
+button.submit-button:active:not(:disabled) {
   transform: scale(0.95);
 }
 
-/* Responsividade*/
-
-/* Para telas menores que 1024px (tablets e menores) */
-@media (max-width: 1024px) {
-  .form-background-cadastro {
-    width: 70%; /* Ajuste a largura para melhor adaptação */
-    height: auto; /* Certifique-se de que o tamanho do formulário seja fluido */
-  }
-
-  .cadastro-title {
-    font-size: 40px; /* Ajuste o título para melhorar a legibilidade */
-  }
-
-  input, button {
-    width: 80%; /* Inputs e botões mais largos para facilidade de uso */
-  }
+button.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
-/* Para telas menores que 768px (smartphones) */
+/* Responsividade*/
 @media (max-width: 768px) {
   .form-background-cadastro {
-    width: 85%; /* Leve aumento da largura para telas menores */
+    background-size: 100% 100%;
+    min-height: 70vh;
+    padding: 30px 10px;
   }
-
+  
   .cadastro-title {
-    font-size: 34px; /* Título um pouco menor */
+    font-size: 38px;
   }
 
-  input {
-    width: 100%; /* Para garantir que os inputs ocupem toda a largura */
-    height: 40px; /* Ajuste de altura */
+  input, .input-wrapper {
+    width: 90%;
   }
 
-  button {
-    width: 70%; /* Botões mais largos em telas pequenas */
-    font-size: 18px; /* Ajuste o tamanho da fonte para os botões */
+  label {
+    margin-left: 5%;
+  }
+
+  button.submit-button {
+    width: 70%;
+    font-size: 18px;
   }
 }
 
-/* Para telas menores que 480px (celulares pequenos) */
-@media (max-width: 480px) {
-  .cadastro-title {
-    font-size: 24px; /* Título reduzido para telas menores */
-  }
-
-  input {
-    height: 30px; /* Ajuste a altura dos inputs para telas muito pequenas */
-  }
-
-  button {
-    width: 80%; /* Botões largos para facilidade de clique */
-    font-size: 18px; /* Ajuste o tamanho da fonte dos botões */
-  }
-}

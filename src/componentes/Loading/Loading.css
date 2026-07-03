@@ -1,4 +1,4 @@
-
+﻿
 .Loading-container {
   position: relative; /* Permite o posicionamento do pseudo-elemento */
   display: flex;
@@ -7,7 +7,7 @@
   height: 100vh;
   flex-direction: column;
   overflow: hidden; 
-  z-index: 1; /*Para garantir que o conteúdo fique acima do fundo*/
+  z-index: 1; /*Para garantir que o conteÃºdo fique acima do fundo*/
 }
 
 .Loading-container::before {
@@ -17,10 +17,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('./img/fundo.png') no-repeat center center;
+  background: url('/assets/imagens/backgrounds/fundo.jpg') no-repeat center center;
   background-size: cover;
-  filter: blur(5px); /*Ajuste o valor do blur conforme necessário*/
-  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+  filter: blur(5px); /*Ajuste o valor do blur conforme necessÃ¡rio*/
+  z-index: -1; /* Coloca o pseudo-elemento atrÃ¡s do conteÃºdo */
 }
 
 .FormLoading {

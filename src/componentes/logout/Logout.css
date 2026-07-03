@@ -1,4 +1,4 @@
-
+﻿
 .Logout-container {
   position: relative; /* Permite o posicionamento do pseudo-elemento */
   display: flex;
@@ -7,7 +7,7 @@
   height: 100vh;
   flex-direction: column;
   overflow: hidden; 
-  z-index: 1; /*Para garantir que o conteúdo fique acima do fundo*/
+  z-index: 1; /*Para garantir que o conteÃºdo fique acima do fundo*/
 }
 
 .Logout-container::before {
@@ -17,16 +17,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('./img/fundo.png') no-repeat center center;
+  background: url('/assets/imagens/backgrounds/fundo.jpg') no-repeat center center;
   background-size: cover;
-  filter: blur(5px); /*Ajuste o valor do blur conforme necessário*/
-  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+  filter: blur(5px); /*Ajuste o valor do blur conforme necessÃ¡rio*/
+  z-index: -1; /* Coloca o pseudo-elemento atrÃ¡s do conteÃºdo */
 }
 
 
 /* Estilizando o Logout */
 .form-background {
-  background-image: url('./img/fundo-forms8.png');
+  background-image: url('/assets/imagens/backgrounds/fundo-forms8.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,11 +59,11 @@ h1 {
 }
 
 .button-container {
-  display: flex; /* Garante que os botões fiquem lado a lado */
-  justify-content: space-between; /* Espaço entre os botões */
+  display: flex; /* Garante que os botÃµes fiquem lado a lado */
+  justify-content: space-between; /* EspaÃ§o entre os botÃµes */
   align-items: center;
-  width: 85%; /* Faz o container de botões ocupar toda a largura */
-  gap: 10px; /* Adiciona espaçamento entre os botões */
+  width: 85%; /* Faz o container de botÃµes ocupar toda a largura */
+  gap: 10px; /* Adiciona espaÃ§amento entre os botÃµes */
 }
 
 .button1 {

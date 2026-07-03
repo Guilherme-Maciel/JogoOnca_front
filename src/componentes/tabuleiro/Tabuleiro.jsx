@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import './Tabuleiro.css';  // Importando o CSS
 
 function Tabuleiro() {
@@ -8,7 +8,7 @@ function Tabuleiro() {
             src="https://renatoccz.itch.io/jogo-da-onca" 
             allowFullScreen="" width="100%" height="100%">
                 <a href="https://renatoccz.itch.io/jogo-da-onca">
-                    Play Jogo da Onça on itch.io
+                    Play Jogo da OnÃ§a on itch.io
                 </a>
             </iframe>
         </div>
@@ -18,7 +18,7 @@ function Tabuleiro() {
 export default Tabuleiro;
 
 
-//código de Login usado aqui para testar
+//cÃ³digo de Login usado aqui para testar
 
 // import React, { useState, useEffect, useContext } from "react";
 // import { useNavigate } from 'react-router';
@@ -49,7 +49,7 @@ export default Tabuleiro;
 //         // navigate('/tutorial');
 //       }
 //     }catch(err) {
-//       setError('credenciais inválidas');
+//       setError('credenciais invÃ¡lidas');
 //     }
 //   };
 
@@ -98,7 +98,7 @@ export default Tabuleiro;
 //   const { user, login, logout } = useAuth();
 
 //   useEffect(() => {
-//     // Recupera dados do localStorage ao carregar a página
+//     // Recupera dados do localStorage ao carregar a pÃ¡gina
 //     const storedUser = localStorage.getItem('user');
 //     if (storedUser) {
 //       login(JSON.parse(storedUser));
@@ -106,7 +106,7 @@ export default Tabuleiro;
 //   }, [login]);
 
 //   if (!user) {
-//     return <div>Você precisa estar logado para ver o perfil.</div>;
+//     return <div>VocÃª precisa estar logado para ver o perfil.</div>;
 //   }
 
 //   return (
@@ -247,7 +247,7 @@ export default Tabuleiro;
 //                             </div>
 //                             <CronometroOnca ativo={jogadorAtualCronometro === 1 ? true : false}/>
 //                             <div className="info-user-tabuleiro jogador-onca-tabuleiro">
-//                                 <h1 id="contador-onca-tabuleiro">JOGADOR ONÇA</h1>
+//                                 <h1 id="contador-onca-tabuleiro">JOGADOR ONÃ‡A</h1>
 //                             </div>
 //                             <span class="info-nome-user">{partida?.primeirojogador?.user}</span>
 //                         </div>
@@ -256,7 +256,7 @@ export default Tabuleiro;
 //                         <div className="tabuleiro">
 //                             <div className="tabuleiro-container">
 //                                 <div className="malha-tabuleiro">
-//                                     {/* Renderização dinâmica do tabuleiro */}
+//                                     {/* RenderizaÃ§Ã£o dinÃ¢mica do tabuleiro */}
 //                                     {tabuleiro.map((row, y) => (
 //                                     <div className="row-tabuleiro" key={y}>
 //                                         {row.map((peca, x) => (
@@ -330,3 +330,4 @@ export default Tabuleiro;
 //     }
 
 // export default Tabuleiro
+

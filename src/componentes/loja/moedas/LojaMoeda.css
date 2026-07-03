@@ -1,14 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Vollkorn:wght@400;600;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Londrina Solid', cursive;
-    font-family: 'Vollkorn', serif;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
 
 .modal-container-loja-moeda{
     width: 100vw;
@@ -22,13 +13,13 @@
 /*.bg-loja-moeda {
     width: 100vw;
     height: 100vh;
-    background-image: url('/public/assets/imagens/backgrounds/cenario_loja.png');
+    background-image: url('/assets/imagens/backgrounds/cenario_loja.png');
     background-repeat: no-repeat;
     background-size: cover;
 }*/
 
 .bg-loja-moeda-container {
-    background: url('img/fundo.png') no-repeat center center;
+    background: url('/assets/imagens/backgrounds/fundo.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -106,7 +97,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url('/public/assets/imagens/placas/placa_icones.png');
+    background-image: url('/assets/imagens/placas/placa_icones.png');
     background-size: contain;
     background-repeat: no-repeat;
     border: none;
@@ -126,7 +117,7 @@ header {
     min-height: 100px; 
     height: 100%;
     margin: 10px;
-    background-image: url('/public/assets/imagens/placas/placa_subtitulo.png');
+    background-image: url('/assets/imagens/placas/placa_subtitulo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -138,7 +129,7 @@ header {
 .form-background-loja {
     height: 100%;
     width: 100%;
-    background-image: url('./img/fundo-forms9.png');
+    background-image: url('/assets/imagens/backgrounds/fundo-forms9.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -172,17 +163,16 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url('/public/assets/imagens/placas/placa_subtitulo.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .loja-title {
     font-size: 52px;
-    color: #57330e;
     padding: 5px;
     font-weight: bold;
-    text-shadow: 5px 5px 2px #000;
+    color: #f7d287;
+    text-shadow: 3px 3px 3px #000;
   }
 
 .icon-loja-moeda {
@@ -194,19 +184,20 @@ h1{
 .icon-moeda-loja-moeda {
     width: 25%;
     height: 60%;
-    background-image: url('/public/assets/imagens/vetores/moedas.png');
+    background-image: url('/assets/imagens/vetores/moedas.png');
 }
 
 .icon-esmeralda-loja-moeda {
     width: 20%;
     height: 50%;
-    background-image: url('/public/assets/imagens/vetores/esmeraldas.png');
+    background-image: url('/assets/imagens/vetores/esmeraldas.png');
 }
 
 .info-p-loja-moeda{
     font-family: 'Londrina Solid', cursive;
     font-size: 2em;
-    color: #5E2C12;
+    color: #f7d287;
+    text-shadow: 3px 3px 3px #000;
 }
 
 .loja-loja-moeda{
@@ -237,15 +228,15 @@ h1{
 }
 
 .esmeralda-p-loja-moeda{
-    background-image: url('/public/assets/imagens/vetores/poucas_esmeraldas.png');
+    background-image: url('/assets/imagens/vetores/poucas_esmeraldas.png');
 }
 
 .esmeralda-m-loja-moeda{
-    background-image: url('/public/assets/imagens/vetores/saco_esmeraldas.png');
+    background-image: url('/assets/imagens/vetores/saco_esmeraldas.png');
 }
 
 .esmeralda-g-loja-moeda{
-    background-image: url('/public/assets/imagens/vetores/balde_esmeraldas.png');
+    background-image: url('/assets/imagens/vetores/balde_esmeraldas.png');
 }
 
 .nome-item-loja-moeda > h1{
@@ -353,3 +344,5 @@ h1{
         font-size: 1.5em;
     }
 }
+
+

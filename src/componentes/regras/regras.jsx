@@ -29,7 +29,18 @@ function Regras() {
   };
 
   return (
-  <div className="container">
+  <>
+        <Header />
+          <div className="    flex
+    h-screen
+    flex-col
+    items-center
+    justify-center
+    overflow-hidden
+    bg-[url('/assets/imagens/backgrounds/fundo.jpg')]
+    bg-cover
+    bg-center
+    bg-no-repeat">
       {/* <header className="menu-cadastro">                  
         <nav className="menu-options-cadastro">
           <a onClick={() => {navigate("/menu")}}>
@@ -43,10 +54,26 @@ function Regras() {
             <img src={soundIcon} alt="Som do Jogo" className="sound-icon-cadastro" />
           </a>
         </nav>
-      </header> */}
-      <Header />
-        <div className="q">
-            <div className='q-c'>
+      </header> 
+      
+      .form-background-loja {
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/imagens/backgrounds/fundo-forms9.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 30% 30%;
+      */}
+            <div className='w-full max-w-5xl rounded-3xl
+                bg-white/55 backdrop-blur-md
+                border border-white/30
+                shadow-2xl
+                flex flex-col justify-center items-center p-10 m-0'>
               <div className="ti">Regras</div>
               <div className='tex'>
                 <p className="texto">
@@ -81,7 +108,9 @@ function Regras() {
               <button className='b' type="submit" onClick={() => {navigate("/menu")}}>Fechar</button>
             </div>
         </div>
-    </div>
+
+  </>
+
   );
 }
 

@@ -8,6 +8,8 @@ function Novasenha() {
     confirmenovasenha: "",
   });
 
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
@@ -46,26 +48,48 @@ function Novasenha() {
           <h2 className="Novasenha-title">Alterar Senha</h2>
 
           <label htmlFor="novasenha">Nova Senha</label>
-          <input
-            type="password"
-            id="novasenha"
-            name="novasenha"
-            value={formData.novasenha}
-            onChange={handleChange}
-            required
-            aria-label="Digite sua nova senha"
-          />
+          <div className="input-wrapper">
+            <input
+              type={showPassword ? "text" : "password"}
+              id="novasenha"
+              name="novasenha"
+              value={formData.novasenha}
+              onChange={handleChange}
+              required
+              placeholder="Mínimo 6 caracteres"
+              aria-label="Digite sua nova senha"
+            />
+            <button
+              type="button"
+              className="toggle-password"
+              onClick={() => setShowPassword(!showPassword)}
+              aria-label={showPassword ? "Ocultar senha" : "Mostrar senha"}
+            >
+              {showPassword ? "🙈" : "👁️"}
+            </button>
+          </div>
 
           <label htmlFor="confirmenovasenha">Confirme a Nova Senha</label>
-          <input
-            type="password"
-            id="confirmenovasenha"
-            name="confirmenovasenha"
-            value={formData.confirmenovasenha}
-            onChange={handleChange}
-            required
-            aria-label="Confirme sua nova senha"
-          />
+          <div className="input-wrapper">
+            <input
+              type={showConfirmPassword ? "text" : "password"}
+              id="confirmenovasenha"
+              name="confirmenovasenha"
+              value={formData.confirmenovasenha}
+              onChange={handleChange}
+              required
+              placeholder="Repita a nova senha"
+              aria-label="Confirme sua nova senha"
+            />
+            <button
+              type="button"
+              className="toggle-password"
+              onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+              aria-label={showConfirmPassword ? "Ocultar senha" : "Mostrar senha"}
+            >
+              {showConfirmPassword ? "🙈" : "👁️"}
+            </button>
+          </div>
           
           {error && <p className="error-message">{error}</p>}
 
@@ -79,4 +103,5 @@ function Novasenha() {
 }
 
 export default Novasenha;
+
 
