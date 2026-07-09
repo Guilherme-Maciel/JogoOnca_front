@@ -8,12 +8,19 @@ export const useUser = () => {
   return useContext(UserContext);
 };
 
+
 // Componente Provider que envolve sua aplicação e fornece o estado global
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null); // estado global para o usuário
 
+  const clearUser = () => {
+    setUser(null); 
+    // Pro-tip: Also clear any browser storage persistence here
+    localStorage.clear(); 
+  };
+  
   return (
-    <UserContext.Provider value={{ user, setUser }}>
+    <UserContext.Provider value={{ user, setUser, clearUser }}>
       {children}
     </UserContext.Provider>
   );

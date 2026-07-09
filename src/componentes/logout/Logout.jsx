@@ -5,13 +5,19 @@ import { useUser } from "../../axios/userContext";
 
 function Logout() {
   const userLocal = localStorage.getItem('email');
-  const { user, setUser } = useUser();
+  const { user, setUser, clearUser } = useUser();
   const navigate = useNavigate();
 
   const handleSubmit = () => {
     setUser(null);
     localStorage.clear();
     navigate("/menu");
+  };
+
+  const handleLogout = () => {
+    clearUser(); 
+    navigate('/menu');
+
   };
 
   return (
@@ -24,7 +30,7 @@ function Logout() {
             </div>
             {userLocal && (
               <div className="button-container">
-                <button className="button1" onClick={() => navigate('/menu')}>Sim</button>
+                <button className="button1" onClick={handleLogout}>Sim</button>
                 <button className="button2" onClick={() => navigate('/menuLogado')}>Não</button>
               </div>
             )}

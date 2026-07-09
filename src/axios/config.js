@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'https://jogo-on-a-production-2c00.up.railway.app/',
+    baseURL: 'https://jogodaonca-etdagnb0dqhmc7d8.brazilsouth-01.azurewebsites.net',
     // baseURL: ""
     headers: {
         "Content-Type": "application/json",
