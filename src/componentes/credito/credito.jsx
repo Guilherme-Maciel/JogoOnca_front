@@ -5,7 +5,6 @@ import './credito.css';
 import gameIcon from './images/icon2.png';
 import soundIcon from './images/soundicon.png';
 import backgroundMusic from './sons/ambiente2.wav';
-import Header from "../header/header";
 
 
 function Credito() {
@@ -29,7 +28,6 @@ function Credito() {
   const navigate = useNavigate();
   return (
     <>
-          <Header />
         <div className="    flex
     h-screen
     flex-col

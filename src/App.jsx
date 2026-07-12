@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Conta from './componentes/conta/Conta.jsx';
-import Home from './componentes/home/Home.jsx';
 import HomeLog from './componentes/homeLog/HomeLog.jsx';
 import Login from './componentes/login/Login2.jsx';
 import Novasenha from './componentes/Novasenha/novasenha.jsx';
@@ -27,34 +26,35 @@ import Logout from './componentes/logout/Logout.jsx';
 import Loading from './componentes/Loading/Loading.jsx';
 import { UserProvider } from './axios/userContext.jsx';
 import { AuthProvider } from './contexts/AuthContext.jsx';
+import Header from './componentes/header/header.jsx';
+import { ProtectedRoute } from './routes/ProtectedRoute.jsx';
 
 const App = () => {
   const { signed } = useAuthConta();
   return (
     <>
-    <AuthProvider>
+      <AuthProvider>
       <UserProvider>
         <BrowserRouter>
         <GlobalProvider>
+          <Header/>
+
           <Routes>
               <Route path='/' element={signed ? <Navigate to={"/menu"}/> : <Navigate to={"/menu"}/>}/>
-              <Route path='/menu' element={<Home />} />
+              <Route path='/menu' element={<HomeLog />} />
               <Route path='/Loading' element={<Loading />} />
               <Route path='/Logout' element={<Logout />} />
-              <Route path='/menuLogado' element={<HomeLog />} />
               <Route path='/login' element={<Login />} />
               <Route path='/cadastro' element={<Cadastro />} />
               <Route path='/novasenha' element={<Novasenha/>} />
-              <Route path='/conta' element={<Conta />} />
+              <Route element={<ProtectedRoute/>}>
+                <Route path='/conta' element={<Conta />} />
+              </Route>
               <Route path='/tabuleiro' element={<Tabuleiro />} />
               <Route path='/fila' element={<Fila />} />
               <Route path='/erro' element={<Erro />} />
               <Route path='/sucesso' element={<Sucesso />} />
               <Route path='/tutorial' element={<Tutorial />} />
-              <Route path='/vitoria/:id' element={<Vitoria />} />
-              <Route path='/derrota/:id' element={<Derrota />} />
-              <Route path='/desistencia/:id' element={<Desistencia/>} />
-              <Route path='/desistir' element={<Desistir />} />
 
               <Route path='/credito' element={<Credito />} />
             </Routes>

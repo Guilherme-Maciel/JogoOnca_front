@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Cadastro.css";
 import api from "../../axios/config";
-import Header from "../header/header";
 
 function Cadastro() {
   const navigate = useNavigate();
@@ -70,10 +69,12 @@ function Cadastro() {
 
   return (
     <div className="cadastro-container">
-      <Header />
-      <div className="form-background-cadastro">
-        <div className="div-form">
-          <form onSubmit={handleSubmit}>
+            <div className='w-2xl rounded-3xl
+                bg-white/55 backdrop-blur-md
+                border border-white/30
+                shadow-2xl
+                flex flex-col justify-center items-center m-0'>       
+          <form onSubmit={handleSubmit} className="pt-10 pb-10 p-20 w-full flex flex-col items-center">
             <h2 className="cadastro-title">Cadastro</h2>
 
             <label htmlFor="username">Nome Completo</label>
@@ -87,6 +88,8 @@ function Cadastro() {
               minLength={3}
               placeholder="Digite seu nome completo"
               aria-label="Digite seu nome completo"
+                            className="self-start w-full"
+
             />
 
             <label htmlFor="birthday">Data de Nascimento</label>
@@ -94,6 +97,7 @@ function Cadastro() {
               type="date"
               id="birthday"
               name="dataNascimento"
+              className="self-start w-full"
               value={birthday}
               onChange={(e) => setBirthday(e.target.value)}
               aria-label="Selecione sua data de nascimento"
@@ -109,10 +113,12 @@ function Cadastro() {
               required
               placeholder="seuemail@exemplo.com"
               aria-label="Digite seu email"
+                            className="self-start w-full"
+
             />
 
             <label htmlFor="passwordHash">Senha</label>
-            <div className="input-wrapper">
+            <div className="input-wrapper w-full self-start flex">
               <input
                 type={showPassword ? "text" : "password"}
                 id="passwordHash"
@@ -123,6 +129,9 @@ function Cadastro() {
                 minLength={6}
                 placeholder="Mínimo 6 caracteres"
                 aria-label="Digite sua senha"
+                              className="self-start w-full"
+
+
               />
               <button
                 type="button"
@@ -135,7 +144,7 @@ function Cadastro() {
             </div>
 
             <label htmlFor="confirmPassword">Confirmação de Senha</label>
-            <div className="input-wrapper">
+            <div className="input-wrapper w-full self-start flex relative">
               <input
                 type={showConfirmPassword ? "text" : "password"}
                 id="confirmPassword"
@@ -146,6 +155,8 @@ function Cadastro() {
                 minLength={6}
                 placeholder="Repita sua senha"
                 aria-label="Confirme sua senha"
+                              className="self-start w-full"
+
               />
               <button
                 type="button"
@@ -160,13 +171,12 @@ function Cadastro() {
             {erro && <p className="error-message">{erro}</p>}
             {loading && <p className="loading-message">Carregando...</p>}
 
-            <button type="submit" disabled={loading} className="submit-button">
+            <button type="submit" disabled={loading} className="submit-button flex justify-center items-center">
               {loading ? "Cadastrando..." : "Cadastrar"}
             </button>
           </form>
         </div>
       </div>
-    </div>
   );
 }
 

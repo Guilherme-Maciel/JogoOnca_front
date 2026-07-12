@@ -52,7 +52,7 @@ const Header = () => {
       <nav className="menu-options-cadastro">
         {userLocal ? (
           <>
-            <Link to="/menuLogado">
+            <Link to="/menu">
               <img src={gameIcon} alt="Jogo da Onça" className="game-logo-cadastro" />
             </Link>
             <Link to="/tutorial">Regras</Link>

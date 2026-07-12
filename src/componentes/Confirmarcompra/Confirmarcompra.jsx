@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Confirmarcompra.css";
 import coinImage from "./img/Bastante.png";
-import Header from "../header/header";
 
 function Confirmarcompra() {
   const [formData, setFormData] = useState({
@@ -22,7 +21,6 @@ function Confirmarcompra() {
   return (
 
         <div class="Confirmarcompra-container">
-      <Header />
         <div className="form-background">
             <form onSubmit={handleSubmit}>
               <div className="Confirmarcompra-title">Adquirir Moedas?</div>

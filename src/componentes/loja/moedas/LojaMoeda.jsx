@@ -8,7 +8,6 @@ import useAuthConta from '/src/hooks/AuthConta';
 import LojaMoedaService from '/src/services/LojaMoedasService';
 import gameIcon from './img/icon2.png';
 import soundIcon from './img/soundicon.png';
-import Header from '../../header/header';
 import api from '../../../axios/config';
 
 function LojaMoeda() {

@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import "./Login2.css"; 
 import api from "../../axios/config";
 import { useUser } from "../../axios/userContext";
-import Header from "../header/header";
 
 function Login() {
   const navigate = useNavigate();
@@ -25,13 +24,14 @@ function Login() {
 
         // Salvar usuário no contexto e localStorage
         setUser(loggedInUser);
+        localStorage.setItem("user", JSON.stringify(loggedInUser));
         localStorage.setItem("username", loggedInUser.username);
         localStorage.setItem("coins", loggedInUser.coins);
         localStorage.setItem("email", loggedInUser.email);
         localStorage.setItem("passwordHash", loggedInUser.passwordHash);
 
         // Redirecionar para o menu após login
-        navigate("/menuLogado");
+        navigate("/menu");
         setEmail("");
         setPasswordHash("");
       }
@@ -42,9 +42,12 @@ function Login() {
 
   return (
     <div className="Login-container">
-      <Header />
-      <div className="form-background">
-        <form onSubmit={handleSubmit}>
+            <div className='w-fit rounded-3xl
+                bg-white/55 backdrop-blur-md
+                border border-white/30
+                shadow-2xl
+                flex flex-col justify-center items-center m-0'>
+                          <form onSubmit={handleSubmit} className="pt-10 pb-10 p-20 flex flex-col justify-center items-center">
           <div className="Login-title">Login</div>
 
           <label htmlFor="email">Email</label>
@@ -83,18 +86,18 @@ function Login() {
 
           {error && <p className="error-message">{error}</p>}
 
-          <div className="forgot-password">
+          <div className="forgot-password hidden">
             <label>
               <a href="/novasenha">Esqueceu a senha?</a>
             </label>
           </div>
 
-          <button type="submit" className="submit-button">
+          <button type="submit" className="submit-button flex justify-center items-center">
             Jogar
           </button>
         </form>
+        </div>
       </div>
-    </div>
   );
 }
 

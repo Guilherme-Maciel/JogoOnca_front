@@ -11,7 +11,11 @@ export const useUser = () => {
 
 // Componente Provider que envolve sua aplicação e fornece o estado global
 export const UserProvider = ({ children }) => {
-  const [user, setUser] = useState(null); // estado global para o usuário
+  const [user, setUser] = useState(() => {
+  const savedUser = localStorage.getItem("user");
+
+  return savedUser ? JSON.parse(savedUser) : null;
+});// estado global para o usuário
 
   const clearUser = () => {
     setUser(null); 

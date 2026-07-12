@@ -4,7 +4,6 @@ import "./regras.css";
 import gameIcon from './images/icon2.png';
 import soundIcon from './images/soundicon.png';
 import backgroundMusic from './sons/ambiente2.wav';
-import Header from "../header/header";
 
 
 function Regras() {
@@ -30,9 +29,8 @@ function Regras() {
 
   return (
   <>
-        <Header />
           <div className="    flex
-    h-screen
+    h-fit
     flex-col
     items-center
     justify-center
@@ -40,6 +38,7 @@ function Regras() {
     bg-[url('/assets/imagens/backgrounds/fundo.jpg')]
     bg-cover
     bg-center
+    p-10
     bg-no-repeat">
       {/* <header className="menu-cadastro">                  
         <nav className="menu-options-cadastro">
@@ -73,36 +72,38 @@ function Regras() {
                 bg-white/55 backdrop-blur-md
                 border border-white/30
                 shadow-2xl
-                flex flex-col justify-center items-center p-10 m-0'>
+                flex flex-col justify-center items-center p-10'>
               <div className="ti">Regras</div>
               <div className='tex'>
-                <p className="texto">
+                <p className="texto mb-5">
                       <br></br>Tabuleiro: O tabuleiro é composto por um conjunto de linhas cruzadas 
-                      formando ma espécie de estrela ou teia, com 24 interseções ao todo. A 
+                      com 24 interseções ao todo. A 
                       "onça" começa posicionada no ponto central do tabuleiro.
                   </p>
-                  <p className="texto">
-                      Peças principais: Peça da onça (movida por um jogador) e 14 peças de 
-                      cachorro: movidas pelo outro jogador.
+                  <p className="texto  mb-5">
+                      Peças principais: Peça da onça e 14 peças de 
+                      cachorro.
                   </p>
-                  <p className="texto">
-                      Objetivo: A onça deve capturar 5 cachorros para vencer.
-                      <br />
-                      Os cachorros devem encurralar a onça, de modo que ela não consiga mais 
-                      se mover, para vencer.
+                  <p className="texto mb-5">
+                      Objetivo: A onça deve capturar 5 cachorros para vencer. Enquanto os cachorros devem encurralar a onça, de modo que ela não consiga mais 
+                      se mover.
                   </p>
-                  <p className="texto">
+                  <p className="texto mb-5">
                       Captura: A onça captura um cachorro ao pular sobre ele, mas só pode 
                       fazer isso se houver uma casa vazia imediatamente após a peça do 
-                      cachorro.
-                      <br />
-                      Os cachorros não têm a capacidade de capturar a onça. Eles precisam 
-                      encurralá-la estrategicamente.
+                      cachorro. Pode haver capturas em sequência.
                   </p>
-                  <p className="texto">
+                  <p className="texto mb-5">
                       Enceramento do jogo: O jogo termina qunado a onça captura 5 
                       cachorros (vitória da onça) ou quando os cachorros conseguem 
                       encurralar a onça, impedindo seus movimentos (vitória dos cachorros).
+                  </p>
+                  <p className="texto mb-5">
+                      Armadilhas: O jogador que controla os cachorros pode posicionar armadilhas estrategicamente em casas vazias do tabuleiro
+                      que não são visíveis pela onça, caso a onça pise em uma armadilha, ela ficará 3 rodadas sem se movimentar.
+                  </p>
+                  <p className="texto mb-5">
+                      Lobo: Caso um cachorro chegue ao final do tabuleiro, ele evolui para uma peça "lobo" que não pode ser capturada pela onça.
                   </p>
                 </div>
               <button className='b' type="submit" onClick={() => {navigate("/menu")}}>Fechar</button>

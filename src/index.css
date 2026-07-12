@@ -8,6 +8,13 @@ body {
   padding: 0;
 }
 
+
+form {
+
+  gap: 6px;
+  font-family: 'Chromium One Std Regular', sans-serif;
+}
+
 .bg-login {
   padding: 1rem;
   background-image: url('/assets/imagens/backgrounds/cenario_login-tabuleiro.png');
@@ -18,9 +25,6 @@ body {
 
 /*FORM*/
 .form {
-  display: flex;
-  flex-direction: column;
-  width: 55%;
   text-align: center;
 }
 

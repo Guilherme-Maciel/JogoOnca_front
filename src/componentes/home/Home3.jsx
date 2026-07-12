@@ -4,7 +4,6 @@ import './Home.css';
 import useAuthConta from '/src/hooks/AuthConta';
 import useSomAmbiente from '/src/hooks/SomAmbienteHook';
 import useTabuleiro from '/src/hooks/TabuleiroHook';
-import Header from '../header/header';
 
 function Home() {
     const navigate = useNavigate();
@@ -46,7 +45,6 @@ function Home() {
     return (
     <div className="bg-home">
     <div className="bg-home-container">
-      <Header />
         <div className="main">
             <div className="TITULO">
                 <h1 className="Texto-Tit">JOGO DA ONÇA</h1>

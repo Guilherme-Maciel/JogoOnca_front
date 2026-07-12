@@ -4,7 +4,6 @@ import "./HomeLog.css";
 import gameIcon from './images/icon2.png';
 import soundIcon from './images/soundicon.png';
 import useSomAmbiente from '/src/hooks/SomAmbienteHook';
-import Header from "../header/header";
 
 function Home() {
 
@@ -31,7 +30,6 @@ function Home() {
           </a>
           </nav>
       </header> */}
-      <Header />
       <div className="Formhome">
         <div className="logo-homeLog">
           <div className="buton-jogar">

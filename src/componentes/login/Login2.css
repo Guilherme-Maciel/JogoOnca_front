@@ -3,7 +3,6 @@
   font-size: 1.1rem;
   margin-top: 5px;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #000;
 }
 
 .Login-container {
@@ -34,15 +33,7 @@
   height: auto;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  padding: 20px 0;
-  gap: 6px;
-  font-family: 'Chromium One Std Regular', sans-serif;
-}
+
 
 .Login-title {
   font-size: 48px;
@@ -59,20 +50,16 @@ label {
   color: #f7d287;
   text-shadow: 2px 2px 2px #000;
   align-self: flex-start;
-  margin-left: 10%;
-  margin-bottom: 2px;
+
 }
 
 .input-wrapper {
   position: relative;
-  width: 80%;
-  margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
 
 input {
-  width: 80%;
   margin-bottom: 15px;
   padding: 12px;
   font-size: 16px;
@@ -189,9 +176,7 @@ button.submit-button:active {
   .Login-title {
     font-size: 38px;
   }
-  input, .input-wrapper {
-    width: 90%;
-  }
+
   label {
     margin-left: 5%;
   }

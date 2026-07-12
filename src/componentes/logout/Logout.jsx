@@ -22,16 +22,19 @@ function Logout() {
 
   return (
     <div className="Logout-container">
-      <div className="form-background">
-        <div>
-          <form onSubmit={(e) => e.preventDefault()}>
+            <div className='w-fit rounded-3xl
+                bg-white/55 backdrop-blur-md
+                border border-white/30
+                shadow-2xl
+                flex flex-col justify-center items-center m-0'>           <div>
+          <form onSubmit={(e) => e.preventDefault()} className="flex flex-col justify-center items-center p-10">
             <div className="Logout-title">
-              <h1>Deseja mesmo encerrar sessão?</h1>
+              <h1>Deseja mesmo <br/> encerrar sessão?</h1>
             </div>
             {userLocal && (
-              <div className="button-container">
+              <div className="flex items-center justify-between w-full gap-10">
                 <button className="button1" onClick={handleLogout}>Sim</button>
-                <button className="button2" onClick={() => navigate('/menuLogado')}>Não</button>
+                <button className="button2" onClick={() => navigate('/menu')}>Não</button>
               </div>
             )}
           </form>

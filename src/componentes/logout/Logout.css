@@ -40,10 +40,6 @@
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
   gap: 1px;
 }
 
@@ -72,14 +68,11 @@ h1 {
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: center;
-  position: relative;
-  top: 10px;
+
   padding: 6px 10px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  height: 30%;
-  width: 40%;
   font-size: 30px;
   color: #89ea5c;
   font-weight: bold;
@@ -95,14 +88,12 @@ h1 {
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: center;
-  position: relative;
-  top: 10px;
+
   padding: 6px 10px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  height: 30%;
-  width: 40%;
+
   font-size: 30px;
   color: #eb0000;
   font-weight: bold;
