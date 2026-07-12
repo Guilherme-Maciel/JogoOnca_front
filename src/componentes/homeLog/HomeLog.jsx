@@ -4,11 +4,14 @@ import "./HomeLog.css";
 import gameIcon from './images/icon2.png';
 import soundIcon from './images/soundicon.png';
 import useSomAmbiente from '/src/hooks/SomAmbienteHook';
+import { useUser } from "../../axios/userContext"
+
 
 function Home() {
 
   const navigate = useNavigate();
   const { toggleMusica, musicaStatus } = useSomAmbiente();
+  const {user} = useUser();
 
   const handleNavigate = () => {
     window.location.href = "https://oncagame.guism.dev";
@@ -32,9 +35,13 @@ function Home() {
       </header> */}
       <div className="Formhome">
         <div className="logo-homeLog">
-          <div className="buton-jogar">
-            <button type="submit" onClick={handleNavigate}>JOGAR</button>
-          </div>
+          {
+            user ??
+            <div className="buton-jogar">
+              <button type="submit" onClick={handleNavigate}>JOGAR</button>
+            </div>
+          }
+
         </div>
       </div>
     </div>
