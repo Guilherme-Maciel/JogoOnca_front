@@ -36,7 +36,7 @@ function Home() {
       <div className="Formhome">
         <div className="logo-homeLog">
           {
-            user ??
+            user != null &&
             <div className="buton-jogar">
               <button type="submit" onClick={handleNavigate}>JOGAR</button>
             </div>
